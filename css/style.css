@@ -1,0 +1,600 @@
+/*
+arramcamos con un reset
+*/
+/*
+use rem instead of px
+use % for adaptable elements
+20px = 1.25rem
+reconozco que en nombres de las clases haber mezclado el ingles y el español, sepan disculpar
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-family: 'Space Mono', monospace;
+
+    /*applies all*/
+}
+* a{
+    color: black;
+    text-decoration: none;
+}
+
+* p{ font-size: 16px;}
+
+* h1{ font-size: 24px;}
+
+* h2{ font-size: 20px;}
+
+
+
+/*por temas de organizacion creamos otro contenedor y la aplicamos flexbox*/
+
+.contenedor-header-primario{
+    margin-top: 10px;
+    display: flex;
+    /*contenedor flex*/
+
+    justify-content: center;
+
+    /*space between no me esta sirviendo porque no me deja acomodar al medio el titulo*/
+
+     /* el titulo no tiene que tener flex y lo de los cosados si para que se adapten a el (titulo)
+     hacemos que t0do sea hijo del titulo? :) */
+
+    /*por ahora voy a tener que dejarlo simple y usando space between
+    entonces voy a acomodar el resto al center y al final voy intentar centrar el titulo
+    titulo que ahora no me deja centrar por el tema de flex space between*/
+
+/*    bueno la respuesta era muy simple, align self & flex basis
+
+*/
+/*    1 indent es shop*/
+/*    2 indent es origen*/
+/*    etc...*/
+
+
+/*al final como resolvi la duda de poner espacios entre flex items?
+       agregandole margen a los items por ahora..*/
+
+}
+
+.logo-div{
+    position: fixed;
+    align-items: center;
+    margin-left: -90%;
+    width: 1rem;
+}
+
+
+
+.title-div h1{
+
+}
+
+/*todavia no logro entender con claridad como hacer para que me tome el h1
+como elemento principal para que el logo y el nav-bar se marginee para el costado*/
+
+.no-title-flex-padre{
+    display: flex;
+}
+
+
+
+.title-div{
+    position: fixed;
+    text-align: center;
+
+}
+
+.nav-cont{
+    position: fixed;
+    margin-left: 75%;
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    /**/
+    margin-right: 40px;
+    list-style-type: none;
+    text-align: center;
+    gap: 100px;
+}
+
+
+
+
+                        /*termina styling de header y arranca main*/
+
+
+.intro-p-div{
+    margin: 20px;
+
+}
+
+.index-intro-p{
+    margin-top: 50px;
+    width: 80%;
+}
+
+
+
+.intro-coleccion-shop {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intro-star-shop {
+
+    text-align: center;
+}
+
+.intro-star-shop{
+    padding-left: 13rem;
+    margin-top: 2.4rem;
+}
+
+
+            .intro-coleccion-producto {
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+
+            .intro-star-producto{
+                padding-left: 13rem;
+                margin-top: 2.4rem;
+            }
+
+/**/
+
+
+.contenido-intro{
+    height: auto;
+    width: 100%;
+}
+
+            .content{
+            }
+
+            .cont-producto-completo{
+                display:flex;
+                justify-content: center;
+            }
+            /*.sub-header-izquierda{display: flex;}*/
+
+
+            .sub-header-derecha {
+            }
+
+            .sub-header-derecha > * {
+                /*display: inline-block;*/
+                /*border-style: solid;*/
+                /*border-width: 1px;*/
+            }
+
+            .sub-header-izquierda > *{
+                display: inline-block;
+                /*border-style: solid;*/
+                /*border-width: 1px;*/
+            }
+
+            .star-deco-product{
+                display: inline-block;
+                margin: 4px 117px 63px 51px
+            }
+
+            .size-selection-div{
+                padding-right: 15rem
+            }
+
+            .size-selector-img{
+                margin: -111px 50px 50px 50px;
+            }
+
+            .sub-header-izquierda {display:inline-block;}
+
+            .sub-header-izquierda a{
+                position: absolute;
+            }
+            .sub-header-izquierda img{
+                margin: 5rem 3rem -38rem 0;
+            }
+
+            .sub-main-cont-derecha{
+
+                /*border-style: solid;*/
+                /*border-width: 1px;*/
+            }
+
+
+            .sub-footer{
+                display: flex;
+                justify-content: center;
+                /*border-style: solid;*/
+                /*border-width: 1px;*/
+            }
+
+
+            .empty-div03-separador{
+                height: auto;
+                width: 383px;
+            }
+
+            .item-aher002{
+                margin: 72px 1px 0 137px;
+                /*border-style: solid;*/
+                /*border-width: 1px;*/
+
+            }
+            .sub-footer-derecha img{
+                /*border-style: solid;*/
+                /*border-width: 1px;*/
+            }
+
+            .tabla-de-tallas{
+                margin: 9px 150px 51px 70px;
+                width: 542px;
+                height: auto;
+            }
+
+
+            .empty-div04-separador{
+                height: auto;
+                width: 187px;
+            }
+            .image04 {margin: 19px 0 64px 0;}
+
+            .empty-div05-separador{
+                height: auto;
+                width: 195px;
+            }
+
+
+.contenido-intro h2{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+    .contenido-intro-shop h2{
+        text-align: center;
+    }
+
+
+
+
+.cont-just-c-center{
+    justify-content: center;
+}
+
+
+.cont-flex{
+    display: flex;
+    /*flex lo pone sus hijos en row auto*/
+}
+
+    .logo04{
+        display: block;
+        height: 2.2rem;
+    }
+/*ahora que estoy haciendo la segunda pagina me di cuenta que
+tengo que usar el mismo archivo css para todas las paginas
+y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
+
+       ?  /
+  ;:'0---8--
+      ¿   \
+
+      (yo enojado con guantes y pitito)
+  */
+
+            .logo-deco-producto{
+                display: inline-block;
+                height: 2.2rem;
+            }
+
+
+
+.right-section-item{
+    display: inline-block;
+
+}
+
+
+
+.contenido-principal-splitted{
+    display: flex;
+    height: 1500px;
+    width: 100%;
+    /*background-color: darkred;*/
+}
+.main-left-div{
+    height: 1500px;
+    width: 50%;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    align-content: start;
+}
+
+.image01{
+    padding-top: 5rem;
+    max-width: 100%;
+    height: auto;
+    /*overflow: hidden;*/
+    /*    para esconder exedente de algun contenedor*/
+}
+
+.main-right-div{
+    height: 1500px;
+    width: 50%;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    align-content: end;
+    /*background-color: rgba(106, 90, 205, 0.31);*/
+}
+
+
+.top-right-div-container{
+    display: block;
+    height: 250px;
+    width: 100%;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+
+}
+.next-arrow p{
+    margin: 50px 50px 00px 848px;
+}
+            .next-arrow-producto{
+                padding-left: 87rem;
+
+            }
+
+            .product-info{
+                margin-top: 64px;
+                display: inline-block;
+                padding: 0 4rem 1rem 4rem ;
+            }
+
+            .inner-being-box-item-product {
+                padding-left: 513px;
+                padding-top: 8px;
+                padding-bottom: 14px;
+            }
+
+.inner-being-box-index{
+    margin: 20px 100px 20px 300px;
+    /*this works clockwise, top, right, bottom, left*/
+}
+    .inner-being-box-shop {
+        display: flex;
+        justify-content: center;
+        /*width: 50%;*/
+    /*    need to aline center*/
+    }
+
+    .cont-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-items-shop{
+        margin-left: 70rem;
+    }
+
+    .nav-back{
+        margin: 0 31px 44px 0;
+    }
+    .logo04{
+        margin: 0 70rem;
+    }
+
+.inner-being-box {
+
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    padding: 0.9rem 1.8rem 1.8rem 1.8rem;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.middle-right-div-container{
+    display: flex;
+    /*no hace falta ponerle flex direction row porque flex
+     automaticamente lo pone en row*/
+    height: 1250px;
+    width: 100%;
+
+    /*al height y width aca al principio lo use para definir el espacio que
+    iba a ocupar t0do pero con el paso del tiempo me fue dando cuenta que eso
+    lo voy definiendo con el margen una vez acomodado t0do*/
+
+
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+}
+
+.right-side-middle-container{
+    height: 1250px;
+    width: 50%;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+}
+.right-side-middle-container p{
+    text-align: left;
+}
+
+.empty-div02 {
+    height: 200px;
+    width: 100%;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    align-content: end;
+}
+
+.logo{
+    margin: 50px 20px 75px 80%;
+    display: block;
+    height: 2.2rem;
+}
+
+
+.left-side-middle-container{
+    height: 1250px;
+    width: 50%;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+}
+.image02{
+    height: 50px;
+    width: 40px;
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+}
+
+
+.logo-union-main-footer a img{
+    position: relative;
+    top: 25px;
+    height: 2.2rem;
+    width: 100%;
+
+}
+
+
+    .image03{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .cont-flex-items{
+        display: flex;
+        justify-content: center;
+
+}
+    .cont-flex-items p{
+        margin: 80px;
+    }
+    .items-stars-deco{
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+
+    }
+    .items-stars-deco p{
+        margin: 0 30rem;
+    }
+    .cont-flex-items p{
+    }
+
+
+
+                .image06{
+                    width: 60rem;
+                    height: auto;
+                    margin: 50px 50px 50px 250px;
+                }
+
+                .image07{
+                    margin-left: 100px;
+                    margin-bottom: 50px;
+                }
+                .span-p-origen{
+                    padding: 100px;
+                }
+                .primer-p-origen{
+                    margin-bottom: 100px;
+                }
+                .segundo-p-origen{
+                    margin-bottom: 100px;
+
+                }
+
+
+                    .contacto-p{
+                        padding-left: 25%;
+                    }
+
+
+                    .contacto-box{
+                        margin: 4rem 4rem 4rem 25%;
+                        display: inline-block;
+                        text-align: center;
+                        width: auto;
+                        padding: 3.5rem 5rem 5rem 5rem;
+                        border-style: solid;
+                        border-width: 1px;
+                    }
+
+
+
+
+                /*termina contenido principal y arranca el footer*/
+
+
+
+.contenedor-footer{
+
+    height: 300px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F8F7F5;
+    /*align-content: end;*/
+    background-color: #F8F7F5;
+}
+
+
+
+                    .contenedor-footer-contacto{
+
+                        height: 444px;
+                        width: 100%;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #F8F7F5;
+                        /*align-content: end;*/
+                        background-color: #F8F7F5;
+
+                    }
+
+.title-div-footer{
+    margin: 3% auto 1% 2%;
+}
+
+.cont-redes-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 50px 10% 50px 25%;
+}
+.cont-redes-border{
+    /*height: 100px;*/
+    /*margin:  auto 50% auto auto;*/
+    box-sizing: content-box;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+.cont-redes-border p{
+    display: inline-block;
+}
+.cont-redes-texto{
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+}
+.tik-tok{
+    margin: auto 50px auto 15px;
+}
+.instagram{
+    margin: auto 15px auto auto;
+}
+.cont-contacto{
+    margin-left: 40%;
+}
+.cont-contacto p{
+    display: inline-block;}
