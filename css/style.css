@@ -226,10 +226,12 @@ como elemento principal para que el logo y el nav-bar se marginee para el costad
 
             .item-aher002{
                 text-align: center;
-                margin: 72px 1px 0 137px;
                 /*border-style: solid;*/
                 /*border-width: 1px;*/
 
+            }
+            .item-aher002-product-info{
+                padding-top: 50px;
             }
             .sub-footer-derecha img{
                 /*border-style: solid;*/
