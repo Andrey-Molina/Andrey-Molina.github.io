@@ -14,7 +14,8 @@ reconozco que en nombres de las clases haber mezclado el ingles y el español, s
     box-sizing: border-box;
     font-weight: normal;
     font-family: 'Space Mono', monospace;
-
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
     /*applies all*/
 }
 * a{
@@ -111,7 +112,7 @@ como elemento principal para que el logo y el nav-bar se marginee para el costad
 
 
 .intro-p-div{
-    margin: 20px;
+    margin: 80px;
 
 }
 
@@ -224,6 +225,7 @@ como elemento principal para que el logo y el nav-bar se marginee para el costad
             }
 
             .item-aher002{
+                text-align: center;
                 margin: 72px 1px 0 137px;
                 /*border-style: solid;*/
                 /*border-width: 1px;*/
@@ -319,13 +321,37 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     align-content: start;
 }
 
-.image01{
-    padding-top: 5rem;
+.image01-cont{
+    margin-top: 5rem;
     max-width: 100%;
     height: auto;
+    position: relative;
+
     /*overflow: hidden;*/
     /*    para esconder exedente de algun contenedor*/
 }
+.image01{
+    position: relative;
+    /*outline:1px solid black;*/
+    /*outline-offset:0;*/
+    /*border:1px solid transparent;*/
+    margin-left: 20%;
+}
+
+.image01-border-deco{
+
+    width: 622px;
+    height: 939px;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 5%;
+    z-index: 1;
+
+}
+
+
+
 
 .main-right-div{
     height: 1500px;
@@ -429,7 +455,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
 }
 
 .empty-div02 {
-    height: 200px;
+    height: 50px;
     width: 100%;
     /*border-style: solid;*/
     /*border-width: 1px;*/
@@ -455,6 +481,26 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     /*border-style: solid;*/
     /*border-width: 1px;*/
 }
+
+.image01-caption{
+    display: inline;
+    margin-left: 70%;
+}
+
+
+.image01-cont figure figcaption{
+    margin: auto auto auto 60%;
+}
+.coleccion-star02-index{
+    margin-left: 60%;
+    margin-top: 20%;
+}
+.coleccion-p-index{
+    text-align: center;
+    position: relative;
+
+}
+
 
 
 .logo-union-main-footer a img{
