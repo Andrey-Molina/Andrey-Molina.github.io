@@ -7,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>shop | AHER</title>
     <link rel="icon" type="image/x-icon" href=".././assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
     <body>
-    <!--header y navbar-->
     <header>
-        <nav class="contenedor-header-primario">
-            <!--flex conteiner-->
+        <div class="nav-bar-bg"></div>
+        <nav class="contenedor-nav-bar">
             <div class="logo-div">
                 <img src="../assets/img/logo.svg" alt="logo01">
             </div>
-            <div class="title-div" id="top">
+            <div class="AHER" id="top">
                 <a href="../index.html"><h1>AHER</h1></a>
             </div>
             <div class="nav-cont">
@@ -28,9 +28,20 @@
                 </ul>
             </div>
         </nav>
+
+        <ul class="nav-items-media pt-5 pt-2">
+            <li class="media-shop"><a class="link-dark link-underline-opacity-0"
+                                      href="../pages/shop.html"><h2
+                    class="h5">
+                shop</h2></a></li>
+            <li><a class="link-dark link-underline-opacity-0" href="../pages/origen.html"><h2
+                    class="h5">origen</h2></a></li>
+            <li><a class="link-dark link-underline-opacity-0" href="../pages/contacto.html"><h2
+                    class="h5 contacto-media">contacto</h2></a></li>
+        </ul>
     </header>
-<!--    termina header / arranca main-->
     <main>
+
         <div id="intro">
             <div class="contenido-intro">
                 <h2>AHER DESIGN STUDIO</h2>
@@ -44,14 +55,9 @@
                             BEING</p>
                     </div>
                 </section>
-
             </div>
-
         </div>
         <section>
-<!--arranca el soon2b carrusel de items
-pero por ahora img fija con un solo link a el item n2-->
-
             <section class="cont-flex  cont-nav" >
                 <a class="cont-flex nav-items-shop" href="../index.html">
 <!--le puedo asignar 2 clases usando un espacio -->
@@ -61,35 +67,77 @@ pero por ahora img fija con un solo link a el item n2-->
                 <img class="cont-nav logo04"
                      src="../assets/img/logo.svg" alt="logo04">
             </section>
-
-            <div class="image03-conjuntos">
-                <a class="image03"
-                   href="products/producto02.html">
+            <div id="carousel-cont">
+            <div id="carouselExampleControlsNoTouching" class="carousel" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/img/carousel/AHER001.png" class="d-block w-100 h-50" alt="AHER002"></a>
+                        <p class="AHER001">AHER001</p>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="../pages/products/item02.html"> <img src="../assets/img/carousel/AHER002.png" class="d-block w-100"
+                             alt="AHER002"></a>
+                        <p class="AHER002">AHER002</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/carousel/AHER003.png" class="d-block w-100"
+                             alt="AHER003">
+                        <p class="AHER003">AHER003</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/carousel/AHER004.png" class="d-block w-100"
+                             alt="AHER004">
+                        <p class="AHER004">AHER004</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/carousel/AHER005.png" class="d-block w-100"
+                             alt="AHER005">
+                        <p class="AHER005">AHER005</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/img/carousel/AHER006.png" class="d-block w-100"
+                             alt="AHER006">
+                        <p class="AHER006">AHER006</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+            <div class="items-stars-deco-media">
+                <p>☆</p>
+                <p>☆</p>
+            </div>
+            <div class="conjuntos">
+                <a class="conjuntos-img"
+                   href="products/item02.html">
                     <img src="../assets/img/conjuntos.PNG"
                         alt="image03"></a>
+<!--                podria haber usado un ul li aca para los items-->
                 <div class="cont-flex-items">
                     <p>AHER001</p>
                     <p>AHER002</p>
-
                     <p>AHER003</p>
                     <p>AHER004</p>
-
                     <p>AHER005</p>
                     <p>AHER006</p>
                 </div>
-
                 <div class="items-stars-deco">
                     <p>☆</p>
                     <p>☆</p>
                 </div>
             </div>
-
         </section>
         <div class="logo-union-main-footer">
-            <a href=""><img src="../assets/img/logo.svg" alt="logo05"></a>
+            <a href=""><img class="logo-div"  src="../assets/img/logo.svg" alt="logo05"></a>
         </div>
     </main>
-    <!--footer-->
     <footer>
         <section class="contenedor-footer">
             <div class="title-div-footer">
@@ -108,6 +156,10 @@ pero por ahora img fija con un solo link a el item n2-->
             </div>
         </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
     </body>
 </html>
 
