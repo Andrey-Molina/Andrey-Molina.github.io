@@ -29,7 +29,7 @@ use % for adaptable elements
 
 * p{ font-size: 16px;}
 
-* h1{ font-size: 24px;}
+/** h1{ font-size: 24px;}*/
 
 * h2{ font-size: 20px;}
 
@@ -721,7 +721,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
                 }
 
                 .span-p-origen .inner-being-box{
-                    margin-left: 35%;
+                    margin-left: 30%;
                 }
 
 
@@ -871,6 +871,46 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         display: none;
     }
 
+    /*shop*/
+
+    .carousel {
+        display: block;
+        position: relative;
+    }
+    #carousel-cont{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conjuntos{
+        display: none;
+    }
+
+    .cont-nav{
+        justify-content: space-around;
+    }
+
+    .cont-nav .logo04{
+        margin: 0;
+    }
+    .cont-nav .nav-back {
+        margin: 0;
+    }
+    .nav-items-shop{
+        margin-left: 0;
+    }
+
+    .items-stars-deco-media{
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+
+    }
+    .contenido-intro h2 {
+        margin-top: 3rem;
+    }
+
+
 }
 
 @media  (max-width: 1024px){
@@ -878,8 +918,6 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     .cont-contacto {
         margin-left: 23%;
     }
-
-
 
 
     #main-grid .imagen01 {
@@ -962,68 +1000,19 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     }
 
 
-
-
-
-
-/*///////////////////media para shop*/
-
-
-
-@media (max-width: 1440px) {
-
-    .carousel {
-        display: block;
-        position: relative;
-    }
-    #carousel-cont{
-        display: flex;
-        justify-content: center;
-    }
-
-    .conjuntos{
-        display: none;
-    }
-
-    .cont-nav{
-        justify-content: space-around;
-    }
-
-    .cont-nav .logo04{
-        margin: 0;
-    }
-    .cont-nav .nav-back {
-        margin: 0;
-    }
-    .nav-items-shop{
-        margin-left: 0;
-    }
-
-    .items-stars-deco-media{
-        display: flex;
-        justify-content: space-around;
-        margin: 20px;
-
-    }
-    .contenido-intro h2 {
-        margin-top: 3rem;
+    #main-grid .imagenes .imagen02 img {
+        height: auto;
+        width: 100%;
     }
 
 
-
-
-}
-
-
-@media (max-width: 425px) {
     .nav-items-media{
         display: flex;
         justify-content: space-between;
     }
 
-
-
 }
+
 
 
 
