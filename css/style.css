@@ -5,7 +5,6 @@ arramcamos con un reset
 use rem instead of px
 use % for adaptable elements
 20px = 1.25rem
-reconozco que en nombres de las clases haber mezclado el ingles y el español, sepan disculpar
 */
 
 *{
@@ -14,7 +13,7 @@ reconozco que en nombres de las clases haber mezclado el ingles y el español, s
     box-sizing: border-box;
     font-weight: normal;
     font-family: 'Space Mono', monospace;
-    /*border: 1px solid;*/
+    /*border: 1px solid red;*/
     /*applies all*/
 }
 * a{
@@ -220,7 +219,9 @@ reconozco que en nombres de las clases haber mezclado el ingles y el español, s
 
 
 #main-grid .imagenes .imagen02 img{
-    padding: 0px 50px 50px 50px;
+    height: auto;
+    width: auto;
+    padding: 0 50px 50px 50px;
 }
 
 #main-grid .imagenes .imagen01 img{
@@ -866,7 +867,9 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         margin-right: 1rem;
     }
 
-
+    .nav-bar-bg {
+        display: none;
+    }
 
 }
 
@@ -913,25 +916,30 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         margin-top: 24px;
         gap: 260px;
     }
-
-
-
-}
-
-@media (max-width: 425px){
-
+    #main-grid .imagenes .imagen02 img {
+        height: 88%;
+        width: auto;
+        padding: 0;
+    }
 
     #main-grid .introduccion {
         margin-top: 1%;
-        grid-column: 1/7;
-    }
-    #main-grid .section01 {
         grid-column: 1/7;
     }
 
     #main-grid .section02 {
         grid-column: 1/7;
     }
+
+    #main-grid .section01 {
+        grid-column: 1/7;
+    }
+
+
+}
+
+@media (max-width: 425px){
+
 
     #main-grid .section02 a{
         text-align: center;
@@ -945,13 +953,20 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         margin: 50px 0 50px 0;
     }
 
+    #main-grid .section01 .elements .cont-flex {
+        flex-wrap: wrap;
+    }
 
-}
+    #main-grid .section01 .elements .cont-flex h5 {
+        padding: 19% 0;
+    }
 
 
 
 
-/*media para shop*/
+
+
+/*///////////////////media para shop*/
 
 
 
@@ -995,6 +1010,8 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     }
 
 
+
+
 }
 
 
@@ -1003,6 +1020,8 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         display: flex;
         justify-content: space-between;
     }
+
+
 
 }
 
