@@ -1,0 +1,398 @@
+@import "sass/base/_reset.scss";
+@import "sass/layout/_main-index.scss";
+@import "sass/layout/_main-shop.scss";
+
+
+//mixings are declared at the top
+//todo create mixing of inner being box and adapt to all pages con variable de padding
+
+//issues solved:
+//  sintoma: scss file no estaba compilando a css
+//  problema: no estaba leyendo la consol para fijarme si
+//el deamon estaba compilando adecuadamente
+//  solucion: abrir la fucking terminal jaja
+
+
+
+
+@mixin logo-footer{
+  width: 100%;
+  position: relative;
+  top: 25px;
+  height: 2.2rem;
+}
+
+@mixin contenido-intro{
+  .contenido-intro{
+    height: auto;
+    width: 100%;
+    h2{
+      margin-top: 5rem;
+      text-align: center;
+    }
+    .intro-star{
+      text-align: center;
+      padding-left: 13rem;
+      margin-top: 1.3999999999999986rem;}
+    .intro-coleccion {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+  }
+}
+
+//@import "sass/layout/_main-item02.scss";
+
+
+//asegurase de cuando buscar no dejar un espacio al final
+
+//entonces con sass no hace tanto falta hacer clase para tod0
+
+//index completo organizado por nesting
+
+.nav-bar-bg{
+  position:fixed;
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  z-index: 0;
+}
+.nav-items-media {
+  display: none;
+  .h5{
+    margin-left: 47px;
+  }
+}
+#main-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  .introduccion {
+    margin-top: 75px;
+    grid-column: 2/6;
+    h5 {
+      text-align: center;
+      grid-column: 2/6;
+    }
+
+    p {
+      margin-top: 3%;
+    }
+  }
+  .section01 {
+    grid-column: 2/6;
+    display: grid;
+
+    .elements {
+      grid-column: 1/5;
+      margin: 35px;
+
+      .cont-flex{
+        align-items: center;
+        justify-content: space-around;
+        p {
+          margin-top: -20px;
+          .inner-being-box{
+            margin-left: 20%;
+          }
+        }
+      }
+    }
+    .quote {
+      grid-column: 1/5;
+    }
+  }
+  .star01 {
+    padding-left: 90%;
+  }
+  .imagenes{
+    grid-column: 1/7;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    .imagen01 img{
+      padding-top: 15rem;
+    }
+    .imagen02 img{
+      height: auto;
+      width: auto;
+      padding: 0 50px 50px 50px;
+    }
+    .imagen03 img{
+      padding-top: 15rem;
+    }
+
+
+  }
+  .section02 {
+    grid-column: 2/6;
+    .text{
+      margin: 50px 0 60px ;
+      gap: 10%;
+    }
+
+  }
+  .footer{
+    grid-column: 1/8;
+  }
+}
+
+
+//estieleo del navbar
+
+
+.contenedor-nav-bar{
+  display: flex;
+  justify-content: center;
+  .logo-navbar{
+    width: 1.05rem;
+  }
+  .logo-div{
+    position: fixed;
+    align-items: center;
+    margin-left: -90%;
+    width: 1rem;
+  }
+  .AHER{
+    position: fixed;
+    text-align: center;
+  }
+  .nav-cont {
+    position: fixed;
+    margin-left: 70%;
+    .nav-items {
+      display: flex;
+      list-style-type: none;
+      gap: 100px;
+      grid-column: 3/4;
+      padding-left:0;
+    }
+  }
+}
+
+
+//estileo del footer
+
+.logo-union-footer {
+  a {
+    .logo-footer{
+      @include logo-footer;
+    }
+  }
+}
+.footer{
+  position: sticky;
+  .contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F8F7F5;
+    .title-div-footer {
+      margin: 30px auto 10px 2%;
+    }
+    .cont-footer-main-flex{
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 50px 10% 50px 25%;
+      .cont-redes-border{
+        box-sizing: content-box;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1px;
+        * p{display: inline-block;}
+        .tik-tok{
+          margin: auto 50px auto 15px;
+        }
+        .instagram{
+          margin: auto 15px auto auto;
+        }
+
+      }
+      .cont-contacto{
+        margin-left: 40%;
+        p{display: inline-block;}
+      }
+    }
+  }
+  .contenedor-footer-contacto{
+    height: 310px;
+    width: 100%;
+    background-color: #F8F7F5;
+    .title-div-footer {
+      margin: 30px auto 10px 2%;
+    }
+    .cont-footer-main-flex{
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 50px 10% 50px 25%;
+      .cont-redes-border{
+        box-sizing: content-box;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1px;
+        * p{display: inline-block;}
+        .tik-tok{
+          margin: auto 50px auto 15px;
+        }
+        .instagram{
+          margin: auto 15px auto auto;
+        }
+
+      }
+      .cont-contacto{
+        margin-left: 40%;
+        p{display: inline-block;}
+      }
+    }
+  }
+  //contacto tiene el footer mas alto por eso esta tweak
+}
+
+//utilities (bloques de codigo que se repiten
+//entonces los convertimos en partial classes
+
+.inner-being-box {
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  padding: 0.9rem 1.8rem 1.8rem 1.8rem;
+  border: solid 1px;
+}
+.cont-flex{
+  display: flex;
+
+}
+.cont-just-c-center{
+  justify-content: center;
+}
+
+
+//PARA EL FINAL HACER UN MIXING BREADCRUMLIST PARA EL NAV FOW Y BACK
+//https://schema.dev/blog/why-the-breadcrumb-list-schema-markup-is-important-and-how-to-implement-it/
+
+
+.content-item02{
+  div{
+    .next-arrow-producto{
+      margin-left: 50%;
+    }
+  }
+  .cont-producto-completo{
+    .sub-header-izquierda{
+      display:inline-block;
+      .logo-deco-producto{
+        display: inline-block;
+        height: 2.2rem;
+      }
+      img{
+        margin: 19px 0 64px 0;
+      }
+      a{
+        position: absolute;
+      }
+      img{
+        margin: 5rem 3rem -38rem 0;
+      }
+    }
+    .sub-header-izquierda > *{
+      display: inline-block;
+    }
+    .sub-header-derecha{
+      .product-info{
+        margin-top: 64px;
+        display: inline-block;
+        padding: 0 4rem 1rem 4rem ;
+      }
+      .inner-being-box-item-product {
+        padding-left: 513px;
+        padding-top: 8px;
+        padding-bottom: 14px;
+      }
+      .size-selector-img{margin: -111px 50px 50px 50px;}
+    }
+    .sub-main-derecha{
+      .star-deco-product{
+        display: inline-block;
+        margin: 4px 117px 63px 51px
+      }
+    }
+  }
+  .sub-footer{
+    .empty-div03-separador{
+      height: auto;
+      width: 383px;
+    }
+    .sub-footer-izquierda{
+      .item-aher002{
+        text-align: center;
+      }
+      .item-aher002-product-info{
+        padding-top: 50px;
+      }
+    }
+    .empty-div04-separador{
+      height: auto;
+      width: 187px;
+    }
+    .sub-footer-derecha{
+      .tabla-de-tallas{
+        margin: 9px 150px 51px 70px;
+        width: 542px;
+        height: auto;
+      }
+    }
+    .empty-div05-separador{
+      height: auto;
+      width: 195px;
+    }
+  }
+}
+
+.main-content-origen{
+  .image06{
+    width: 60rem;
+    height: auto;
+    margin: 50px 50px 50px 250px;
+  }
+  .cont-flex{
+    .span-p-origen{
+      padding: 100px 80px;
+      .primer-p-origen{
+        margin-bottom: 100px;
+      }
+      .segundo-p-origen{
+        margin-bottom: 100px;
+      }
+      .inner-being-box{
+        position: absolute;
+        margin-left: 10%;
+
+      }
+    }
+    .image07{
+      margin-left: 100px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.nav-bar-breadcrumb{
+  justify-content: space-around;
+  .next-arrow-producto{
+    margin-left: 50%;
+  }
+}
+.contacto-p{
+  padding-left: 25%;
+}
+.contacto-box{
+  margin: 4rem 4rem 4rem 25%;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  padding: 3.5rem 5rem 5rem 5rem;
+  border-style: solid;
+  border-width: 1px;
+}

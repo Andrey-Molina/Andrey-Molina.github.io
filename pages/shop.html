@@ -8,14 +8,14 @@
     <title>shop | AHER</title>
     <link rel="icon" type="image/x-icon" href=".././assets/img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-sass.css">
 </head>
     <body>
     <header>
         <div class="nav-bar-bg"></div>
         <nav class="contenedor-nav-bar">
             <div class="logo-div">
-                <img src="../assets/img/logo.svg" alt="logo01">
+                <a href="../index.html"><img src="../assets/img/logo.svg" alt="logo01"></a>
             </div>
             <div class="AHER" id="top">
                 <a href="../index.html"><h1 class="h4">AHER</h1></a>
@@ -40,32 +40,26 @@
         </ul>
     </header>
     <main>
-        <div id="intro">
-            <div class="contenido-intro">
-                <h2>AHER DESIGN STUDIO</h2>
-                <section class="cont-intro-center-shop">
-                    <div>
-                        <p class="intro-star-shop">☆</p>
-                        <p class="intro-coleccion-shop">COLECCION: SS23-01</p>
-                    </div>
-                    <div class="inner-being-box-shop">
-                        <p class="inner-being-box">CONNECTED WITH <br> OUR INNER
-                            BEING</p>
-                    </div>
-                </section>
-            </div>
+        <div class="contenido-intro">
+            <h2>AHER DESIGN STUDIO</h2>
+            <section>
+                <p class="intro-star">☆</p>
+                <p class="intro-coleccion">COLECCION: SS23-01</p>
+                <div class="cont-flex cont-just-c-center">
+                    <p class="inner-being-box">CONNECTED WITH <br> OUR INNER BEING</p>
+                </div>
+            </section>
         </div>
-        <section>
-            <section class="cont-flex  cont-nav" >
+        <section class="cont-flex cont-nav" >
                 <a class="cont-flex nav-items-shop" href="../index.html">
-<!--le puedo asignar 2 clases usando un espacio -->
+                            <!--le puedo asignar 2 clases usando un espacio -->
                     <p><-</p>
                     <p class="nav-back">/inicio/shop</p>
                 </a>
-                <img class="cont-nav logo04"
+                <img class="logo04"
                      src="../assets/img/logo.svg" alt="logo04">
             </section>
-            <div id="carousel-cont">
+        <div id="carousel-cont">
             <div id="carouselExampleControlsNoTouching" class="carousel" data-bs-touch="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -108,17 +102,17 @@
                 </button>
             </div>
             </div>
-            <div class="items-stars-deco-media">
+        <div class="items-stars-deco-carousel">
                 <p>☆</p>
                 <p>☆</p>
             </div>
-            <div class="conjuntos">
-                <a class="conjuntos-img"
-                   href="products/item02.html">
+        <div class="conjuntos">
+                <a class="cont-flex cont-just-c-center"
+                   href="./products/item02.html">
                     <img src="../assets/img/conjuntos.PNG"
                         alt="image03"></a>
 <!--                podria haber usado un ul li aca para los items-->
-                <div class="cont-flex-items">
+                <div class="cont-flex-items cont-flex cont-just-c-center">
                     <p>AHER001</p>
                     <p>AHER002</p>
                     <p>AHER003</p>
@@ -126,22 +120,21 @@
                     <p>AHER005</p>
                     <p>AHER006</p>
                 </div>
-                <div class="items-stars-deco">
+                <div class="items-stars-deco cont-flex cont-just-c-center">
                     <p>☆</p>
                     <p>☆</p>
                 </div>
             </div>
-        </section>
-        <div class="logo-union-main-footer">
-            <a href=""><img class="logo-div"  src="../assets/img/logo.svg" alt="logo05"></a>
-        </div>
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="logo-union-footer">
+            <a href=""><img class="logo-footer" src="../assets/img/logo.svg" alt="logo03"></a>
+        </div>
         <section class="contenedor-footer">
             <div class="title-div-footer">
-                <h1>AHER</h1>
+                <h1 class="h4">AHER</h1>
             </div>
-            <div class="cont-redes-flex">
+            <div class="cont-footer-main-flex">
                 <div class="cont-redes-border">
                     <div class="cont-redes-texto">
                         <a class="tik-tok" href="https://www.tiktok.com/en//"><p>TIK TOK</p></a>
