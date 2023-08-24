@@ -46,7 +46,7 @@ use % for adaptable elements
 
 /*por temas de organizacion creamos otro contenedor y la aplicamos flexbox*/
 
-.contenedor-nav-bar{
+.nav-bar-og{
     /*margin-top: 10px;*/
     display: flex;
     /*contenedor flex*/
@@ -141,7 +141,7 @@ use % for adaptable elements
 
 
 
-.nav-items-media .h5{
+.nav-items-query .h5{
     margin-left: 47px;
 }
 
@@ -716,7 +716,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
 
 
 
-.contenedor-footer{
+.footer-body{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -744,16 +744,16 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
 
                     }
 
-.title-div-footer {
+.footer-header {
     margin: 30px auto 10px 2%;
 }
 
-.cont-footer-main-flex{
+.footer-main{
     display: flex;
     flex-wrap: nowrap;
     margin: 50px 10% 50px 25%;
 }
-.cont-redes-border{
+.redes-border{
     /*height: 100px;*/
     /*margin:  auto 50% auto auto;*/
     box-sizing: content-box;
@@ -761,7 +761,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     border-style: solid;
     border-width: 1px;
 }
-.cont-redes-border p{
+.redes-border p{
     display: inline-block;
 }
 .cont-redes-texto{
@@ -774,10 +774,10 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
 .instagram{
     margin: auto 15px auto auto;
 }
-.cont-contacto{
+.contacto-footer{
     margin-left: 40%;
 }
-.cont-contacto p{
+.contacto-footer p{
     display: inline-block;}
 
 
@@ -788,12 +788,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
 
 @media (min-width: 1440px) {
 
-    #main-grid .navbar {
-        display: none;
-        position: absolute;
-    }
-
-    .nav-items-media{
+    .nav-items-query{
         display: none;
     }
 
@@ -816,7 +811,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         display: none;
     }
 
-    .nav-items-media{
+    .nav-items-query{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -827,10 +822,10 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         margin-top: 20px;
         }
 
-    .nav-items-media .h5 {
+    .nav-items-query .h5 {
          margin-left: 0;
     }
-    .nav-items-media .contacto-media{
+    .nav-items-query .contacto-media{
         margin-right: 1rem;
     }
 
@@ -876,13 +871,11 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
     .contenido-intro h2 {
         margin-top: 3rem;
     }
-
-
 }
 
 @media  (max-width: 1024px){
 
-    .cont-contacto {
+    .contacto-footer {
         margin-left: 23%;
     }
 
@@ -891,7 +884,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         display: none;
         position: absolute;
     }
-    #main-grid .nav-items{
+    .nav-items{
         display: none;
         position: absolute;
     }
@@ -954,7 +947,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         margin-left: 4%;
     }
 
-    .cont-footer-main-flex {
+    .footer-main {
         margin: 50px 0 50px 0;
     }
 
@@ -972,8 +965,7 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
         width: 100%;
     }
 
-
-    .nav-items-media{
+    .nav-items-query{
         display: flex;
         justify-content: space-between;
     }

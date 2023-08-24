@@ -1,0 +1,162 @@
+//media queries
+
+
+@media  (max-width: 1024px) {
+  //nav items esta en todos los html
+  //y es son los items del navbar og
+
+  .nav-items{
+    display: none;
+    position: absolute;
+  }
+
+  //index
+  #main-grid{
+    .imagen01 {
+      display: none;
+      position: absolute;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .nav-bar-og{
+    .shop{
+      margin-left: 50%;
+    }
+    .origen{
+      margin-left: 1%;
+    }
+  }
+}
+@media  (max-width: 768px){
+
+  .nav-bar-og{
+    .nav.cont{
+      margin-top: 24px;
+      gap: 260px;
+    }
+  }
+
+  //index
+  #main-grid{
+    .introduccion {
+      grid-column: 1/7;
+      p{
+        text-align: center;
+      }
+    }
+    .section01 {
+      grid-column: 1/7;
+    }
+    .imagenes{
+      .imagen02{
+        img {
+          height: 88%;
+          width: auto;
+          padding: 0;
+        }
+      }
+      .imagen03 {
+        img{
+          display: none;
+          position: absolute;
+        }
+      }
+    }
+    .section02 {
+      grid-column: 1/7;
+      margin-top: 3rem;
+      .text{
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  #contacto{
+    .nav-bar-breadcrumb{
+      margin: 4% 0;
+    }
+  }
+}
+@media (max-width: 575px){
+  .footer{
+    .footer-body{
+      .footer-main{
+        flex-wrap: wrap;
+        .contacto-footer-575{
+          display: inline;
+        }
+        .contacto-footer{
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px){
+
+  .nav-og-star-right{
+    right: 5px;
+    top: 30px;
+  }
+
+  //navbar
+  .nav-items-query{
+    display: flex;
+    justify-content: space-between;
+  }
+  //index (le puse wrap collecion y ibb + padding y margen)
+  #main-grid{
+    .section01 {
+      .cont-flex {
+        flex-wrap: wrap;
+        h5 {
+          padding: 19% 0;
+        }
+        .inner-being-box {
+          margin-left: 4%;
+        }
+      }
+    }
+    .imagenes{
+      .imagen02 {
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    .section02 {
+      a{
+        text-align: center;
+      }
+    }
+  }
+
+  #contacto{
+    .nav-bar-breadcrumb{
+      .next-arrow-producto{
+        margin-left: 42%;
+      }
+    }
+    .contacto-box{
+      margin: 4rem 2% 4rem 2%;
+    }
+    .inner-being-box{
+      margin: 0 48px;
+    }
+  }
+}
+@media (max-width: 320px){
+
+
+  #contacto{
+    .nav-bar-breadcrumb{
+      .next-arrow-producto{
+        margin-left: 34%;
+      }
+    }
+  }
+}

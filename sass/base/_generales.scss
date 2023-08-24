@@ -1,0 +1,57 @@
+
+
+//extend classes
+%border{
+  border: solid 1px;
+}
+
+//variables
+$margin-t-low: 1rem;
+$margin-t-mid: 2.5rem;
+$margin-t-high: 5rem;
+
+$color-secundario: rgb(248, 247, 245);
+
+//mixings
+
+@mixin logo-footer{
+  animation: spin 2s linear infinite;
+  left: 50%;
+  position: relative;
+  top: 25px;
+  height: 2.2rem;
+}
+@mixin contenido-intro($margin-top){
+  .contenido-intro{
+    height: auto;
+    width: 100%;
+    h2{
+      margin-top: $margin-t-high;
+      text-align: center;
+    }
+    .intro-star{
+      text-align: center;
+      padding-left: 13rem;
+      margin-top: 1.3999999999999986rem;}
+    .intro-coleccion {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+  }
+}
+
+
+//animations
+
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
