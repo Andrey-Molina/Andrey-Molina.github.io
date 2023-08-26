@@ -17,8 +17,24 @@
 #main-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+
+  .aher-header-title{
+    grid-column: 3/5;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont-flex{
+    margin-top: 15px;
+    grid-column: 3/5;
+    justify-content: center;
+    align-items: center;
+  }
+
   .introduccion {
-    margin-top: 75px;
+    margin-top: 15px;
     grid-column: 2/6;
     h5 {
       text-align: center;

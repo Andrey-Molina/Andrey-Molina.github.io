@@ -5,6 +5,13 @@
 //import de las variables
 
 @mixin contenido-intro{
+
+  .aher-header-title{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
   .contenido-intro{
     height: auto;
     width: 100%;

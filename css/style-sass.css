@@ -20,6 +20,8 @@
     margin-bottom: 0; }
   * li {
     list-style-type: none; }
+  * h1, * .h4 {
+    font-size: 28px !important; }
 
 .link-* {
   color: black;
@@ -49,8 +51,19 @@
 #main-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr); }
+  #main-grid .aher-header-title {
+    grid-column: 3/5;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center; }
+  #main-grid .cont-flex {
+    margin-top: 15px;
+    grid-column: 3/5;
+    justify-content: center;
+    align-items: center; }
   #main-grid .introduccion {
-    margin-top: 75px;
+    margin-top: 15px;
     grid-column: 2/6; }
     #main-grid .introduccion h5 {
       text-align: center;
@@ -107,6 +120,12 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+main .aher-header-title {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center; }
 
 main .contenido-intro {
   height: auto;
@@ -199,6 +218,12 @@ main .conjuntos .cont-flex img {
   main .conjuntos {
     display: none; } }
 
+.content-item02 .aher-header-title {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center; }
+
 .content-item02 div .next-arrow-producto {
   margin-left: 50%; }
 
@@ -257,29 +282,41 @@ main .conjuntos .cont-flex img {
   height: auto;
   width: 195px; }
 
+.main-content-origen .aher-header-title {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center; }
+
 .main-content-origen .image06 {
   width: 60rem;
   height: auto;
   margin: 50px 50px 50px 250px; }
 
-.main-content-origen .cont-flex .span-p-origen {
+.main-content-origen .span-p-origen {
   padding: 100px 80px; }
-  .main-content-origen .cont-flex .span-p-origen .primer-p-origen {
-    margin-bottom: 100px; }
-  .main-content-origen .cont-flex .span-p-origen .segundo-p-origen {
-    margin-bottom: 100px; }
-  .main-content-origen .cont-flex .span-p-origen .inner-being-box {
-    position: absolute;
-    margin: 8%; }
+  .main-content-origen .span-p-origen .primer-p-origen {
+    margin: 100px; }
+  .main-content-origen .span-p-origen .segundo-p-origen {
+    margin: 100px; }
 
-.main-content-origen .cont-flex .image07 {
-  margin-left: 100px;
-  margin-bottom: 50px; }
+.main-content-origen .cont-flex-image07 {
+  display: flex;
+  justify-content: end; }
+  .main-content-origen .cont-flex-image07 .image07 {
+    margin-left: 100px;
+    margin-bottom: 50px; }
 
-.contacto-p {
+#contacto .aher-header-title {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center; }
+
+#contacto .contacto-p {
   padding-left: 25%; }
 
-.contacto-box {
+#contacto .contacto-box {
   background-color: rgba(196, 196, 196, 0.2);
   margin: 4rem 4rem 4rem 25%;
   display: inline-block;

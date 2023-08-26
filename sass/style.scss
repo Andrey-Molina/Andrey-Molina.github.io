@@ -8,8 +8,6 @@
 @import "sass/layout/main-item02";
 @import "sass/layout/main-origen";
 @import "sass/layout/main-contacto";
-
-
 @import "sass/layout/mediaQ/mediaQuery";
 
 
@@ -49,13 +47,12 @@
 //pero usando mi codigo
 
 
+
 .nav-og-star-right{
   position: absolute;
   right: 10px;
   animation: spin 2s linear infinite;
 }
-
-
 
 .nav-bar-og{
   display: flex;

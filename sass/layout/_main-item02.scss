@@ -1,5 +1,11 @@
 // estileo item002
 .content-item02{
+  .aher-header-title{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
   div{
     .next-arrow-producto{
       margin-left: 50%;
