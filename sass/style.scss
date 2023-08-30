@@ -8,6 +8,7 @@
 @import "sass/layout/main-item02";
 @import "sass/layout/main-origen";
 @import "sass/layout/main-contacto";
+@import "sass/layout/footer";
 @import "sass/layout/mediaQ/mediaQuery";
 
 
@@ -47,7 +48,6 @@
 //pero usando mi codigo
 
 
-
 .nav-og-star-right{
   position: absolute;
   right: 10px;
@@ -77,87 +77,6 @@
   }
 }
 
-
-//estileo del footer
-
-.logo-union-footer {
-  a {
-    .logo-footer{
-      @include logo-footer;
-    }
-  }
-}
-.footer{
-  position: sticky;
-  .footer-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: $color-secundario;
-    .footer-header {
-      margin: 30px auto 10px 2%;
-    }
-    .footer-main{
-      display: flex;
-      justify-content: space-around;
-      padding: 2% 0 5% 0;
-      .redes-border{
-        display: inline;
-        width: fit-content;
-        box-sizing: content-box;
-        padding: 20px;
-        border-style: solid;
-        border-width: 1px;
-        * p{display: inline-block;}
-        .tik-tok{
-          margin: auto 50px auto 15px;
-        }
-        .instagram{
-          margin: auto 15px auto auto;
-        }
-
-      }
-      .contacto-footer-575{
-        display: none;
-      }
-      .contacto-footer{
-        display: inline;
-        p{
-          text-align: end;
-          display: inline-block;
-        }
-      }
-    }
-  }
-  .contenedor-footer-contacto{
-    height: 310px;
-    width: 100%;
-    background-color: #F8F7F5;
-    .footer-header {
-      margin: 30px auto 10px 2%;
-    }
-    .cont-footer-main-flex-contacto{
-      display: flex;
-      flex-wrap: nowrap;
-      margin: 50px 10% 50px 25%;
-      .redes-border{
-        box-sizing: content-box;
-        padding: 20px;
-        border-style: solid;
-        border-width: 1px;
-        * p{display: inline-block;}
-        .tik-tok{
-          margin: auto 50px auto 15px;
-        }
-        .instagram{
-          margin: auto 15px auto auto;
-        }
-      }
-    }
-  }
-  //contacto tiene el footer mas alto por eso esta tweak
-}
-
 //utilities (bloques de codigo que se repiten
 //entonces los convertimos en partial classes
 
@@ -170,7 +89,6 @@
 }
 .cont-flex{
   display: flex;
-
 }
 .cont-just-c-center{
   justify-content: center;

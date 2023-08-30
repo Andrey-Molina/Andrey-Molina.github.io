@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-weight: normal;
   font-family: 'Space Mono', monospace;
+  //border: solid 1px black;
 
   a{
     color: black;
@@ -15,7 +16,10 @@
   }
 
   h2{ font-size: 20px;}
-  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{line-height: normal !important; }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    line-height: normal !important;
+    margin-bottom:0 !important;;
+  }
   ul{padding-bottom: 0;
     padding-left: 0;
     margin-bottom: 0;}

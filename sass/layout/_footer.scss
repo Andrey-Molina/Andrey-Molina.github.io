@@ -1,0 +1,79 @@
+//estileo del footer
+
+.logo-union-footer {
+  a {
+    .logo-footer{
+      @include logo-footer;
+    }
+  }
+}
+.footer{
+  position: sticky;
+  .footer-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-secundario;
+    .footer-header {
+      margin: 30px auto 10px 2%;
+    }
+    .footer-main{
+      display: flex;
+      justify-content: space-around;
+      padding: 2% 0 5% 0;
+      .redes-border{
+        display: inline;
+        width: fit-content;
+        box-sizing: content-box;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1px;
+        * p{display: inline-block;}
+        .tik-tok{
+          margin: auto 50px auto 15px;
+        }
+        .instagram{
+          margin: auto 15px auto auto;
+        }
+
+      }
+      .contacto-footer-575{
+        display: none;
+      }
+      .contacto-footer{
+        display: inline;
+        p{
+          text-align: end;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .contenedor-footer-contacto{
+    height: 310px;
+    width: 100%;
+    background-color: #F8F7F5;
+    .footer-header {
+      margin: 30px auto 10px 2%;
+    }
+    .cont-footer-main-flex-contacto{
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 50px 10% 50px 25%;
+      .redes-border{
+        box-sizing: content-box;
+        padding: 20px;
+        border-style: solid;
+        border-width: 1px;
+        * p{display: inline-block;}
+        .tik-tok{
+          margin: auto 50px auto 15px;
+        }
+        .instagram{
+          margin: auto 15px auto auto;
+        }
+      }
+    }
+  }
+  //contacto tiene el footer mas alto por eso esta tweak
+}

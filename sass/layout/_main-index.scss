@@ -1,6 +1,5 @@
 ///estileo main index + boostrap navbar
 
-
 .nav-bar-bg{
   position:fixed;
   width: 100%;
@@ -34,7 +33,7 @@
   }
 
   .introduccion {
-    margin-top: 15px;
+    margin: 15px 0 50px 0;
     grid-column: 2/6;
     h5 {
       text-align: center;
@@ -54,7 +53,7 @@
     .elements {
       padding-top: 20px;
       grid-column: 1/5;
-      margin: 35px;
+      margin: 60px 35px;
 
       .cont-flex{
         align-items: center;
@@ -97,13 +96,20 @@
   }
   .section02 {
     grid-column: 2/6;
-    .text{
+    margin-top: 100px;
+
+    #text-index-main-footer{
+      flex-direction: column;
       margin: 50px 0 60px ;
       gap: 10%;
+      .dos{
+        margin: 25px;
+      }
     }
-
   }
   .footer{
     grid-column: 1/8;
   }
 }
+
+
