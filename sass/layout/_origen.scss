@@ -1,0 +1,65 @@
+//estileo origen
+
+@import "sass/base/generales";
+//import to be able to reach the variables
+
+.main-content-origen{
+  .aher-header-title{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .image06{
+    width: 60rem;
+    height: auto;
+    margin: 50px 50px 50px 250px;
+  }
+  #paleta-colores-origen{
+    display: flex;
+    justify-content: center;
+    .color{
+      width: 200px;
+      height: 20px;
+      margin: 10px;
+    }
+    .uno{
+      background-color: rgb(109, 124, 110);
+    }
+    .dos{
+      background-color:#A8A2A2;
+    }
+    .tres{
+      background-color:#AF918C;
+    }
+    .cuatro{
+      background-color:#CBAE91;
+    }
+    .cinco{
+      background-color:#D3C2B2;
+    }
+    .seis{
+      background-color:#D8CBC0;
+    }
+  }
+  .origen-text{
+    display: flex;
+    flex-direction: column;
+    margin: $padding-s;
+    .texto01-origen{
+      align-self: center;
+      padding: $padding-m 75px;
+      }
+    .texto02-origen{
+      align-self: center;
+      padding: $padding-m 75px;
+    }
+  }
+  .ibb-origen{
+    margin: $padding-m;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+

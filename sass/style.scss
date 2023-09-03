@@ -3,11 +3,12 @@
 @import "sass/base/reset";
 @import "sass/base/generales";
 @import "sass/components/navbar";
-@import "sass/layout/main-index";
-@import "sass/layout/main-shop";
-@import "sass/layout/main-item02";
-@import "sass/layout/main-origen";
-@import "sass/layout/main-contacto";
+@import "sass/layout/index";
+@import "sass/layout/shop";
+@import "sass/layout/item02";
+@import "sass/layout/origen";
+@import "sass/layout/contacto";
+@import "sass/layout/error404";
 @import "sass/layout/footer";
 @import "sass/layout/mediaQ/mediaQuery";
 
@@ -61,13 +62,7 @@
     align-items: center;
     width: 1rem;
   }
-  .AHER{
-    position: absolute;
-    text-align: center;
-    h1{
-      padding-top: 70%;
-    }
-  }
+
 }
 
 .nav-bar-breadcrumb{

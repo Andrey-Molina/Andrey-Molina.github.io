@@ -1,0 +1,80 @@
+//estileado de shop.html
+
+@import "sass/base/generales";
+
+//import de las variables
+
+main{
+  .aher-header-title{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenido-intro{
+    height: auto;
+    width: 100%;
+    h2{
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .intro-star{
+      text-align: center;
+      padding-left: 13rem;
+      margin-top: 0;
+    }
+    .intro-coleccion {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .intro-shop-p{
+      display: flex;
+      justify-content: center;
+      margin: 15px;
+      p{
+        text-align: center;
+        width: 60rem;
+      }
+    }
+  }
+
+  .cont-nav{
+    margin: $margin-t-low;
+    justify-content: space-around;
+    .logo04{
+      height: 1.2rem;
+    }
+  }
+
+  #conjuntos{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 25px;
+
+    .img{
+      height: auto;
+      width: 100%;
+      border: dashed #cccccc 2px;
+    }
+      a:hover{
+        transform: scale(1.01);
+      }
+  }
+
+  .items-stars-deco{
+    p{
+      margin: 0 30rem;
+    }
+  }
+}
+
+@media (max-width: 1250px){
+  main{}
+}
+@media (max-width: 1024px) {
+  main{}
+}
+
+//tuve que poner el media de shop en el mismismo file de shop
+//porque no me lo tomaba sin el la etiqueta main

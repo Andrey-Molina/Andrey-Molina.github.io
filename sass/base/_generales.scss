@@ -2,7 +2,7 @@
 
 //extend classes
 %border{
-  border: solid 1px;
+  border: solid 1px black;
 }
 
 //variables
@@ -10,16 +10,25 @@ $margin-t-low: 1rem;
 $margin-t-mid: 2.5rem;
 $margin-t-high: 5rem;
 
+//
+$padding-xs: 10px;
+$padding-s: 15px;
+$padding-m: 50px;
+$padding-l: 100px;
+
 $color-secundario: rgb(248, 247, 245);
+$color-terciario: rgb(247, 247, 247);
+$color-cuaternario: rgb(217, 217, 217);
+$color-quinario: #cccccc;
 
 //mixings
 
 
 @mixin logo-footer{
   animation: spin 2s linear infinite;
-  left: 50%;
+  left: 49%;
   position: relative;
-  top: 25px;
+  top: 23px;
   height: 2.2rem;
 }
 @mixin contenido-intro($margin-top){
@@ -45,6 +54,10 @@ $color-secundario: rgb(248, 247, 245);
 
 //animations
 
+@keyframes up-reload {
+  from {margin: 125px 74px;}
+  to {margin: 75px 74px;}
+}
 
 @keyframes spin {
   0%{
@@ -52,6 +65,15 @@ $color-secundario: rgb(248, 247, 245);
   }
   100%{
     transform: rotate(360deg);
+  }
+}
+
+@keyframes scale-a-bit {
+  0%{
+    transform: scale(10%);
+  }
+  100%{
+    transform: scale(50%);
   }
 }
 

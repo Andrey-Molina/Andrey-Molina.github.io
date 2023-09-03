@@ -306,10 +306,10 @@ use % for adaptable elements
     width: 100%;
 }
 
-            .sub-header-derecha {
+            .main-derecha {
             }
 
-            .sub-header-izquierda > *{
+            .main-izquierda > *{
                 display: inline-block;
 
             }
@@ -327,12 +327,12 @@ use % for adaptable elements
                 margin: -111px 50px 50px 50px;
             }
 
-            .sub-header-izquierda {display:inline-block;}
+            .main-izquierda {display:inline-block;}
 
-            .sub-header-izquierda a{
+            .main-izquierda a{
                 position: absolute;
             }
-            .sub-header-izquierda img{
+            .main-izquierda img{
                 margin: 5rem 3rem -38rem 0;
             }
 
@@ -678,18 +678,18 @@ y que puedo reciclar clases (no se me había ni pasado por la cabeza tbh)
                     margin-left: 100px;
                     margin-bottom: 50px;
                 }
-                .span-p-origen{
+                .origen-text{
                         padding: 100px;
                 }
-                .primer-p-origen{
+                .texto01-origen{
                     margin-bottom: 100px;
                 }
-                .segundo-p-origen{
+                .texto02-origen{
                     margin-bottom: 100px;
 
                 }
 
-                .span-p-origen .inner-being-box{
+                .origen-text .inner-being-box{
                     margin-left: 30%;
                 }
 
