@@ -2,7 +2,7 @@
 
 //extend classes
 %border{
-  border: solid 1px black;
+  border: solid 2px black;
 }
 
 //variables
@@ -31,6 +31,8 @@ $color-quinario: #cccccc;
   top: 23px;
   height: 2.2rem;
 }
+
+
 @mixin contenido-intro($margin-top){
   .contenido-intro{
     height: auto;
@@ -75,6 +77,11 @@ $color-quinario: #cccccc;
   100%{
     transform: scale(50%);
   }
+}
+
+@keyframes extend-width {
+  from {width: 75px;}
+  to {width: 125px ;}
 }
 
 

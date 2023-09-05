@@ -81,6 +81,7 @@
   width: auto;
   padding: 0.9rem 1.8rem 1.8rem 1.8rem;
   @extend %border;
+  text-wrap: nowrap;
 }
 .cont-flex{
   display: flex;
@@ -89,6 +90,14 @@
   justify-content: center;
 }
 
+
+
+@media (max-width: 320px){
+  .nav-bar-og{
+    display: flex;
+
+  }
+}
 
 // todo PARA EL FINAL HACER UN MIXING B READCRUMLIST PARA EL NAV FOW Y BACK
 //https://schema.dev/blog/why-the-breadcrumb-list-schema-markup-is-important-and-how-to-implement-it/

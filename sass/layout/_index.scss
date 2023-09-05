@@ -26,12 +26,6 @@
     text-align: center;
   }
 
-  .cont-flex{
-    margin-top: 15px;
-    grid-column: 3/5;
-    justify-content: center;
-    align-items: center;
-  }
 
   .introduccion {
     margin-top: 32px;
@@ -41,41 +35,12 @@
       grid-column: 2/6;
     }
     p {
-      margin: 75px 74px;
+      margin: 20px 225px;
+      text-align: center;
     }
   }
   .estrella{
     padding: 0 $padding-xs ;
-  }
-
-  .RECONNECTION{
-    grid-row: 3/4;
-    grid-column: 1/2;
-    justify-content: flex-end;
-    display: flex;
-  }
-
-  .RECONNECTION:hover{
-    transform: scale(1.01);
-  }
-  .SUSTENTABILIDAD{
-    grid-column: 6/7;
-    grid-row: 3/4;
-    justify-content: flex-start;
-    display: flex;
-  }
-  .SUSTENTABILIDAD:hover{
-    transform: scale(1.01);
-  }
-  .AUTENTICIDAD{
-    padding: $padding-s;
-    grid-column: 3/5;
-    grid-row: 4/5;
-    justify-content: center;
-    display: flex;
-  }
-  .AUTENTICIDAD:hover{
-    transform: scale(1.01);
   }
   .nav-bar-breadcrumb{
     grid-column: 2/6;
@@ -87,7 +52,7 @@
   }
   .section01 {
     grid-column: 2/6;
-    grid-row: 5/6;
+    grid-row: 3/6;
     display: grid;
 
     .elements {

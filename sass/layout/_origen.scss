@@ -45,7 +45,7 @@
   .origen-text{
     display: flex;
     flex-direction: column;
-    margin: $padding-s;
+    margin: 75px 47px;
     .texto01-origen{
       align-self: center;
       padding: $padding-m 75px;
@@ -60,6 +60,48 @@
     display: flex;
     justify-content: center;
   }
-
 }
 
+@media (max-width: 768px) {
+  main {
+    .main-content-origen{
+      #paleta-colores-origen {
+        .color {
+          margin: 0;
+        }
+      }
+      .origen-text{
+
+        .texto01-origen,.texto02-origen{
+          padding: 50px 0;
+        }
+      }
+      .ibb-origen {
+        margin: 0;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 575px) {
+  main {
+    .main-content-origen{
+      .origen-text{
+        margin: 11px 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    .main-content-origen{
+      .origen-text{
+        margin: 11px 24px;
+        text-align: center;
+      }
+    }
+  }
+}

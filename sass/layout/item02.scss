@@ -1,12 +1,11 @@
 @import "sass/base/generales";
 
 
-@mixin annotation-lines-cont($top, $left, $width){
+@mixin annotation-lines-cont($top, $left){
   position: absolute;
   top: $top;
   left: $left;
   z-index: 1000;
-  width: $width;
   height: 200px;
   display: flex;
   align-items: flex-end;
@@ -233,7 +232,9 @@
         left: 36px;
       }
       .annotation-line-cont01{
-        @include annotation-lines-cont(-1%, 54%, 20%);
+        @include annotation-lines-cont(-1%, 54%);
+        width: 20%;
+
         p{
           align-self: center;
           padding-top: 27px;
@@ -248,17 +249,22 @@
         }
       }
       .annotation-line-cont02{
-        @include annotation-lines-cont(12%, -18%, 60%);
+        @include annotation-lines-cont(12%, -18%);
+        width: 60%;
+
         .line02-top{
           width: 125px;
           height: 0.8px;
           display: block;
           background-color: black;
         }
+
       }
 
       .annotation-line-cont03{
-        @include annotation-lines-cont(25%, 30%, 60%);
+        @include annotation-lines-cont(25%, 30%,);
+        width: 60%;
+
         .line03-falda{
           width: 125px;
           height: 0.8px;
@@ -267,7 +273,9 @@
         }
       }
       .annotation-line-cont04{
-        @include annotation-lines-cont(66%, 19%, 60%);
+        @include annotation-lines-cont(66%, 19%,);
+        width: 60%;
+
         align-items: normal;
         .line04-polainas{
           width: 75px;
@@ -289,6 +297,11 @@
         height: auto;
         width: 40%;
       }
+      .image04:hover{
+        .line02-top{
+          animation: extend-width 1s ease-out;
+        }
+      }
       .cont-flex-info{
         display: flex;
         justify-content: center;
@@ -296,10 +309,6 @@
           text-align: center;
           margin: 7%;
         }
-      }
-
-      .image04-media{
-        display: none;
       }
     }
     .main-izquierda > *{
@@ -321,6 +330,9 @@
         }
         .inner-being-box-item-product {
           padding: $padding-xs 0 14px 50px;
+          .inner-being-box {
+            border: dashed #cccccc 2px;
+          }
         }
       }
       .product-var-cont{
@@ -365,7 +377,7 @@
           }
           .image05{
             height: auto;
-            width: 70%;
+            width: 480px;
           }
         }
         #tabla-talles{
@@ -431,23 +443,153 @@
       .cont-producto{
         flex-direction: column;
         .main-izquierda {
+          width: 100%;
           .image04 {
             margin: 20px 0 0 0 ;
+            width: 300px;
+          }
+          .annotation-line-cont01{
+            top: 0;
+            left: 53%;
+            width: unset;
+            .line01-cm {
+              width: 110px;
+            }
+          }
+          .annotation-line-cont02{
+            left: -15%;
+          }
+          .annotation-line-cont03{
+            top: 23%;
+            left: 146px;
+          }
+          .annotation-line-cont04{
+            top: 61%;
+            left: 73px;
+          }
+        }
+        .main-derecha{
+          display: flex;
+          flex-wrap: wrap;
+          width: unset;
+          justify-content: center;
+          .product-var-cont{
+            justify-content: center;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: 1250px){
+  main{
+    #content-item02 {
+      .cont-producto {
+        .main-izquierda {
+          .annotation-line-cont01{
+            left: 53%;
+            .line01-cm {
+              width: 126px;
+            }
+          }
+          .annotation-line-cont03{
+            top: 24%;
+            left: 170px;
+
+          }
+          .annotation-line-cont04{
+            top: 62%;
+            left: 90px;
           }
         }
       }
     }
   }
 }
+
+
+@media  (max-width: 1024px){
+  main{
+    #content-item02 {
+      .cont-producto {
+        .main-izquierda {
+          .annotation-line-cont03{
+            top: 24%;
+            left: 190px;
+
+          }
+          .annotation-line-cont04{
+            top: 61%;
+            left: 112px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media  (max-width: 960px){
   main{
     #content-item02{
       .cont-producto{
         .main-izquierda {
           justify-content: center;
-          .image04 {
-            height: auto;
-            width: 85%;
+          .annotation-line-cont03{
+            top: 24%;
+            left: 190px;
+
+          }
+          .annotation-line-cont04{
+            top: 61%;
+            left: 112px;
+          }
+
+        }
+      }
+      .sub-footer-izquierda {
+        display: none;
+      }
+    }
+  }
+}
+
+@media  (max-width: 768px){
+  main{
+    #content-item02{
+      .cont-producto{
+        .main-izquierda {
+          justify-content: center;
+          .annotation-line-cont03{
+            top: 25%;
+            left: 210px;
+          }
+          .annotation-line-cont04{
+            top: 62%;
+            left: 132px;
+          }
+        }
+      }
+      .sub-footer-izquierda {
+        display: none;
+      }
+    }
+  }
+}
+
+@media  (max-width: 575px){
+  main{
+    #content-item02{
+      .cont-producto{
+        .main-izquierda {
+          .annotation-line-cont03{
+            top: 25%;
+            left: 230px;
+          }
+          .annotation-line-cont04{
+            top: 62%;
+            left: 152px;
           }
         }
       }
@@ -463,10 +605,22 @@
     #content-item02{
       .cont-producto{
         .main-izquierda {
+
+        }
+      }
+    }
+  }
+}
+
+@media  (max-width: 375px){
+  main{
+    #content-item02{
+      .cont-producto{
+        .main-izquierda {
           justify-content: center;
           .image04 {
             height: auto;
-            width: 100%;
+            width: 93%;
           }
         }
       }
@@ -474,23 +628,5 @@
   }
 }
 
-@media  (max-width: 500px){
-  main{
-    #content-item02{
-      .nav-bar-breadcrumb{
-        .next-arrow-producto {
-          margin-left: 14%;
-        }
-      }
-      .cont-producto{
-        .main-izquierda {
-          justify-content: center;
-          .image04 {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
+
 

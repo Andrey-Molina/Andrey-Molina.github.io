@@ -1,5 +1,6 @@
 //media queries
 
+@import "sass/base/generales";
 
 @media  (max-width: 1024px) {
   //nav items esta en todos los html
@@ -12,9 +13,20 @@
 
   //index
   #main-grid{
+    .introduccion {
+      p {
+        margin: 20px 125px;
+      }
+    }
     .imagen01 {
       display: none;
       position: absolute;
+    }
+    .imagenes{
+      p{
+        margin-left: 160px;
+        align-self: flex-start;
+      }
     }
   }
 }
@@ -43,13 +55,18 @@
     .introduccion {
       grid-column: 1/7;
       p{
+        margin: 20px 75px;
         text-align: center;
       }
     }
     .section01 {
       grid-column: 1/7;
+      .quote{
+        padding: 0 $padding-s;
+      }
     }
     .imagenes{
+
       .imagen02{
         img {
           height: 88%;
@@ -62,6 +79,10 @@
           display: none;
           position: absolute;
         }
+      }
+      p{
+        margin-left: 0;
+        align-self: center;
       }
     }
     .section02 {
@@ -80,6 +101,20 @@
   }
 }
 @media (max-width: 575px){
+
+  #main-grid{
+    .introduccion {
+      p {
+        margin: 20px 10px;
+      }
+    }
+    .imagenes{
+      p{
+        text-align: center;
+      }
+    }
+  }
+
   .footer{
     .footer-body{
       .footer-main{
@@ -109,15 +144,20 @@
   //index (le puse wrap collecion y ibb + padding y margen)
   #main-grid{
     .section01 {
-      .cont-flex {
-        flex-wrap: wrap;
-        h5 {
-          padding: 19% 0;
-        }
-        .inner-being-box {
-          margin-left: 4%;
+      .elements{
+        margin: 44px 0;
+
+        .cont-flex {
+          flex-wrap: wrap;
+          h2 {
+            margin-bottom: 50px;
+          }
+          .inner-being-box {
+            margin-left: 4%;
+          }
         }
       }
+
     }
     .imagenes{
       .imagen02 {
@@ -127,10 +167,17 @@
         }
       }
     }
-
     .section02 {
       a{
         text-align: center;
+      }
+      #text-index-main-footer{
+        .uno{
+          padding: 20px;
+        }
+        .dos{
+          padding: 20px;
+        }
       }
     }
   }
