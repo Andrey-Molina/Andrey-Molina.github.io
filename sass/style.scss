@@ -2,7 +2,7 @@
 
 @import "sass/base/reset";
 @import "sass/base/generales";
-@import "sass/components/navbar";
+@import "sass/layout/offcanvas-menu";
 @import "sass/layout/index";
 @import "sass/layout/shop";
 @import "sass/layout/item02";
@@ -10,7 +10,6 @@
 @import "sass/layout/contacto";
 @import "sass/layout/error404";
 @import "sass/layout/footer";
-@import "sass/layout/mediaQ/mediaQuery";
 
 
 //mixings are declared at the top
@@ -19,9 +18,10 @@
 //todo sacarle el wrap a redes del footer (por lo menos al principio)
 
 //issues solved:
+
 //  sintoma: scss file no estaba compilando a css
 //  problema: no estaba leyendo ala consola para fijarme si
-//el deamon estaba compilando adecuadamente
+//  el deamon estaba compilando adecuadamente
 //  solucion: abrir la fucking terminal jaja
 
 //  sintoma:mixings no declarados
@@ -62,7 +62,6 @@
     align-items: center;
     width: 1rem;
   }
-
 }
 
 .nav-bar-breadcrumb{
@@ -91,17 +90,10 @@
 }
 
 
-
-@media (max-width: 320px){
-  .nav-bar-og{
-    display: flex;
-
-  }
-}
-
 // todo PARA EL FINAL HACER UN MIXING B READCRUMLIST PARA EL NAV FOW Y BACK
 //https://schema.dev/blog/why-the-breadcrumb-list-schema-markup-is-important-and-how-to-implement-it/
 
+@import "sass/layout/mediaQ/mediaQuery";
 
 
 

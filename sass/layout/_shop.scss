@@ -71,48 +71,6 @@ main{
 
 
 
-@media (max-width: 1100px) {
-  main{
-    .items-stars-deco{
-      p{
-        margin: 0 20rem;
-      }
-    }
-  }
-}
-
-
-
-@media (max-width: 990px) {
-  main{
-    #conjuntos{
-      margin: 25px 0;
-      flex-wrap: wrap;
-      > a {
-        flex-basis: 34%;
-      }
-    }
-    .items-stars-deco{
-      p{
-        margin: 0 15rem;
-      }
-    }
-  }
-}
-
-
-@media (max-width: 575px) {
-  main{
-    #conjuntos > a {
-      flex-basis: 68%;
-    }
-    .items-stars-deco{
-      .star-shop-n2{
-        display: none;
-      }
-    }
-  }
-}
 
 
 //tuve que poner el media de shop en el mismismo file de shop

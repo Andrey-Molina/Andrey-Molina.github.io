@@ -24,33 +24,33 @@
 <header>
     <nav class="nav-bar-og">
         <img class="logo-div" src="../../assets/img/logo.svg" alt="logo navbar">
-        <a class="shop link-dark link-underline-opacity-0 " href="../../pages/shop.html"><h2
+        <a class="shop" href="../../pages/shop.html"><h2
                 class="h5">shop</h2></a>
-        <a class="origen link-dark link-underline-opacity-0 " href="../../pages/origen.html"><h2
+        <a class="origen" href="../../pages/origen.html"><h2
                 class="h5">origen</h2></a>
-        <a class="contacto link-dark link-underline-opacity-0 " href="../../pages/contacto.html"><h2
+        <a class="contacto " href="../../pages/contacto.html"><h2
                 class="h5"
         >contacto</h2></a>
+        <section class="offcanvas-menu">
+            <input type="checkbox" id="toogle-menu"/>
+            <label for="toogle-menu" class="toogle-open"><span></span></label>
+            <nav>
+                <div>
+                    <a href="#"> <i class="fab fa-css3-alt"></i></a>
+                    <label for="toogle-menu" class="toogle-close">
+                        <span></span>
+                    </label>
+                </div>
+                <ul>
+                    <li><a href="../../index.html">index </a></li>
+                    <li><a href="../shop.html">shop </a></li>
+                    <li><a href="../origen.html">origen </a></li>
+                    <li><a href="../contacto.html">contacto </a></li>
+                </ul>
+            </nav>
+        </section>
+
     </nav>
-<!--    <header class="offcanvas-menu">-->
-<!--        <input type="checkbox" id="toogle-menu"/>-->
-<!--        <label for="toogle-menu" class="toogle-open"><span></span></label>-->
-<!--        <nav>-->
-<!--            <div>-->
-<!--                <a href="#"> <i class="fab fa-css3-alt"></i>AHER DESIGN STUDIO</a>-->
-<!--                <label for="toogle-menu" class="toogle-close">-->
-<!--                    <span></span>-->
-<!--                </label>-->
-<!--            </div>-->
-<!--            <ul>-->
-<!--                <li><a href="">Section </a></li>-->
-<!--                <li><a href="">Section </a></li>-->
-<!--                <li><a href="">Section </a></li>-->
-<!--                <li><a href="">Section </a></li>-->
-<!--                <li><a href="">Section </a></li>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--    </header>-->
 
     <p id="center-lines"></p>
 </header>
@@ -76,7 +76,7 @@ dandonde un id a content y jugar con clases locales-->
                 <p><-</p>
             </a>
             <!--soon2b item03-->
-            <a class="next-arrow-producto" href="../products/item02.html">
+            <a class="next-arrow-producto" href="../error404.html">
                 <p>-></p>
             </a>
         </div>
@@ -104,8 +104,7 @@ dandonde un id a content y jugar con clases locales-->
                         <p>$ 16.000</p>
                     </div>
                 </div>
-
-                <img class="image04" src="../../assets/img/ABRIL-235-226h-785w.png"
+                <img class="item02-image01" src="../../assets/img/ABRIL-235-226h-785w.png"
                      alt="producto izquierda con precios">
                 <p class="item-aher002">AHER002</p>
                 <div class="cont-flex-info">
@@ -139,45 +138,47 @@ dandonde un id a content y jugar con clases locales-->
                     <div class="sub-main-cont-derecha">
                         <div class="star-img-cont-flex">
                             <span class="star-deco-product">☆</span>
-                            <img class="image05" src="../../assets/img/ABRIL-281-scaled-24.png" alt="imagen derecha zoom">
+                            <img class="item02-image02" src="../../assets/img/ABRIL-281-scaled-24.png" alt="imagen item 2 ">
                         </div>
-                        <div id="tabla-talles">
-                            <p>/TABLA DE TALLES</p>
-                            <div class="sizes">
-                                <p>ref</p>
-                                <p>xs</p>
-                                <p>s</p>
-                                <p>m</p>
-                                <p>l</p>
-                                <p>xl</p>
-                            </div>
-                            <div class="busto-sizes">
-                                <p>busto</p>
-                                <p>85-90</p>
-                                <p>90-95</p>
-                                <p>95-98</p>
-                                <p>100-102</p>
-                                <p>102-110</p>
-                            </div>
-                            <div class="cintura-sizes">
-                                <p>cintura</p>
-                                <p>66-68</p>
-                                <p>70-72</p>
-                                <p>74-76</p>
-                                <p>78-80</p>
-                                <p>82-84</p>
-                            </div>
-                            <div class="cadera-sizes">
-                                <p>cadera 1/2</p>
-                                <p>86-96</p>
-                                <p>98-100</p>
-                                <p>100-102</p>
-                                <p>104-106</p>
-                                <p>108-112</p>
+                        <section>
+                            <div id="tabla-talles">
+                                <p>/TABLA DE TALLES</p>
+                                <div class="sizes">
+                                    <p>ref</p>
+                                    <p>xs</p>
+                                    <p>s</p>
+                                    <p>m</p>
+                                    <p>l</p>
+                                    <p>xl</p>
+                                </div>
+                                <div class="busto-sizes">
+                                    <p>busto</p>
+                                    <p>85-90</p>
+                                    <p>90-95</p>
+                                    <p>95-98</p>
+                                    <p>100-102</p>
+                                    <p>102-110</p>
+                                </div>
+                                <div class="cintura-sizes">
+                                    <p>cintura</p>
+                                    <p>66-68</p>
+                                    <p>70-72</p>
+                                    <p>74-76</p>
+                                    <p>78-80</p>
+                                    <p>82-84</p>
+                                </div>
+                                <div class="cadera-sizes">
+                                    <p>cadera 1/2</p>
+                                    <p>86-96</p>
+                                    <p>98-100</p>
+                                    <p>100-102</p>
+                                    <p>104-106</p>
+                                    <p>108-112</p>
+
+                                </div>
 
                             </div>
-
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -197,8 +198,8 @@ dandonde un id a content y jugar con clases locales-->
             </div>
             <div class="redes-border">
                 <div class="cont-redes-texto">
-                    <a class="tik-tok" href="https://www.tiktok.com/en//"><p>TIK TOK</p></a>
-                    <a class="instagram" href="https://www.instagram.com/"><p>INSTAGRAM</p></a>
+                    <a class="tik-tok" href="https://www.tiktok.com/@aherdesignstudio"><p>TIK TOK</p></a>
+                    <a class="instagram" href="https://www.instagram.com/aherdesign_"><p>INSTAGRAM</p></a>
                 </div>
             </div>
             <div class="contacto-footer">

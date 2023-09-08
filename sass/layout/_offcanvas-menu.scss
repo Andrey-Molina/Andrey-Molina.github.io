@@ -1,0 +1,148 @@
+.offcanvas-menu {
+  display: none;
+
+  > label {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-self: end;
+    align-items: center;
+    z-index: 9999;
+  }
+  label {
+    span,
+    span::before,
+    span::after {
+      transition: background 0.3s, transform 0.3s;
+    }
+    span,
+    span::before,
+    span::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 32px;
+      background: #000000;
+    }
+    span::before {
+      transform: translateY(-12px);
+    }
+    span::after {
+      transform: translateY(12px);
+    }
+  }
+  nav {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    right: -500px;
+    overflow: hidden;
+    background: linear-gradient(to top,transparent, #c4c4c4, #c4c4c4);
+
+    transition: 0.6s ease;
+    padding: 23px 26px;
+    z-index: 2;
+
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        display: flex;
+        align-items: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        i {
+          font-size: 4rem;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      label {
+        width: 30px;
+        height: 30px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+        span,
+        span:before,
+        span:after {
+          background: darken($color: #fff, $amount: 70);
+        }
+      }
+    }
+    > ul {
+      margin-top: 30px;
+
+      li {
+        cursor: pointer;
+        padding: 10px 0;
+        transform: translateX(-30px);
+        opacity: 0;
+        transition: 0.4s ease;
+        a {
+          font-size: 1.5em;
+          line-height: 1.5;
+          color: darken($color: #fff, $amount: 80);
+          display: block;
+
+        }
+
+        &:hover {
+          animation: hover 0.5s;
+        }
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked {
+      ~ label {
+        opacity: 0;
+        pointer-events: none;
+      }
+      ~ nav {
+        right: 0;
+        top: 0;
+      }
+
+      ~ nav label span {
+        background: transparent;
+      }
+      ~ nav label span:before {
+        transform: rotate(-45deg);
+      }
+      ~ nav label span:after {
+        transform: rotate(45deg);
+      }
+      ~ nav label span:before,
+      ~ nav label span:after {
+        transition-delay: 0.2s;
+      }
+
+      ~ nav ul li {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+      ~ nav ul li:nth-child(1) {
+        transition-delay: 0.1s;
+      }
+      ~ nav ul li:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+      ~ nav ul li:nth-child(3) {
+        transition-delay: 0.3s;
+      }
+      ~ nav ul li:nth-child(4) {
+        transition-delay: 0.4s;
+      }
+    }
+  }
+}
