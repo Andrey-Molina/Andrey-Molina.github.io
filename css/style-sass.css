@@ -859,7 +859,8 @@ main .error404 {
   #main-grid .section01 {
     grid-column: 1/7; }
     #main-grid .section01 .quote {
-      padding: 0 15px; }
+      padding: 0 15px;
+      grid-column: 1/4; }
   #main-grid .imagenes .imagen02 img {
     height: 88%;
     width: auto;
