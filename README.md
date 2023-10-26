@@ -7,6 +7,6 @@ Se proponen nuevas formas de manifestarnos como seres en nuestro planeta y  los 
 Teniendo en cuenta esta perspectiva, se creó una marca Argentina nacional  donde se diseñaron prendas estilosas que responden a este nuevo modelo de producción textil.
 El propósito es generaran prendas de diseño únicas bajando la cultura del norte vinculando esto con las necesidades que hoy se demandan con respecto al medio ambiente.  
 
-Sustentabilidad, Diseño Nacional, Diseño social, Textiles  locales, Comunidad. 
+Sustentabilidad, Diseño Nacional, Diseño social, Textiles  locales & Comunidad. 
 
 **AHER**
