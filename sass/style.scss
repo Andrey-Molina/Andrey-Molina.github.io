@@ -8,6 +8,7 @@
 @import "sass/layout/item02";
 @import "sass/layout/origen";
 @import "sass/layout/contacto";
+@import "sass/layout/carrito";
 @import "sass/layout/error404";
 @import "sass/layout/footer";
 
@@ -62,6 +63,11 @@
     align-items: center;
     width: 1rem;
   }
+  .carrito-logo{
+    height: auto;
+    width: 2.2rem;
+    align-items: center;
+  }
 }
 
 .nav-bar-breadcrumb{
@@ -80,7 +86,6 @@
   width: auto;
   padding: 0.9rem 1.8rem 1.8rem 1.8rem;
   @extend %border;
-  text-wrap: nowrap;
 }
 .cont-flex{
   display: flex;

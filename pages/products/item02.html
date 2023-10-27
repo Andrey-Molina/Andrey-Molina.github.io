@@ -19,6 +19,7 @@
     <link rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
     <link rel="stylesheet" href="../../css/style-sass.css">
     <title>Conjuntos | AHER002 | AHER</title>
+    <link rel="stylesheet" href="../../sass/layout/_item02.scss">
 </head>
 <body>
 <header>
@@ -31,6 +32,9 @@
         <a class="contacto " href="../../pages/contacto.html"><h2
                 class="h5"
         >contacto</h2></a>
+
+        <a href="../carrito.html"><img class="carrito-logo" src="../../assets/img/new-cart@0.5x.png"
+                                       alt="carrito"></a>
         <section class="offcanvas-menu">
             <input type="checkbox" id="toogle-menu"/>
             <label for="toogle-menu" class="toogle-open"><span></span></label>
@@ -49,14 +53,10 @@
                 </ul>
             </nav>
         </section>
-
     </nav>
-
     <p id="center-lines"></p>
 </header>
 <main>
-    <!-- todos los subs dentro de content se puedieran haber evitado
-dandonde un id a content y jugar con clases locales-->
     <div class="aher-header-title">
         <a class="AHER"
            href="../../index.html"><h1>AHER</h1></a>
@@ -127,13 +127,14 @@ dandonde un id a content y jugar con clases locales-->
                         <p class="inner-being-box">CONNECTED WITH <br> OUR INNER BEING</p>
                     </div>
                 </section>
-                <div class="product-var-cont">
-                    <span class="product-var">XS</span>
-                    <span class="product-var">S</span>
-                    <span class="product-var">M</span>
-                    <span class="product-var">L</span>
-                    <span class="product-var">XL</span>
+                <div id="product-cont">
+                    <span class="product-var" id="item02-xs">XS</span>
+                    <span class="product-var" id="item02-s">S</span>
+                    <span class="product-var" id="item02-m">M</span>
+                    <span class="product-var" id="item02-l">L</span>
+                    <span class="product-var" id="item02-xl">XL</span>
                 </div>
+                <button id="add-carrito">selecciona el talle</button>
                 <div class="sub-main-derecha">
                     <div class="sub-main-cont-derecha">
                         <div class="star-img-cont-flex">
@@ -174,9 +175,7 @@ dandonde un id a content y jugar con clases locales-->
                                     <p>100-102</p>
                                     <p>104-106</p>
                                     <p>108-112</p>
-
                                 </div>
-
                             </div>
                         </section>
                     </div>
@@ -236,9 +235,13 @@ dandonde un id a content y jugar con clases locales-->
 
     help yourself to visualize using bordes style solid y width 1px
 
-    acabo de enseñar que para selecionar todos los hijos de un tag en css puedo hacer > *
+    acabo de aprender que para selecionar todos los hijos de un tag en css puedo hacer > *
     -->
 </div>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/producto.js"></script>
 </body>
 </html>
 

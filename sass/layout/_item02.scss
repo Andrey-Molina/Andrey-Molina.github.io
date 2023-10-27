@@ -75,7 +75,6 @@
         }
 
       }
-
       .annotation-line-cont03{
         @include annotation-lines-cont(25%, 30%,);
         width: 60%;
@@ -135,7 +134,6 @@
       * li {
         list-style-type: disc;
       }
-
       .section-01-info{
         display: flex;
         .product-info{
@@ -150,7 +148,21 @@
           }
         }
       }
-      .product-var-cont{
+      #add-carrito {
+        font-size: 18px;
+        border: none;
+        padding: 5px;
+        outline: none;
+        background-color: unset;
+        margin:  20px 126px;
+        font-style: italic;
+
+      }
+      #add-carrito:hover{
+        transform: scale(1.01);
+      }
+
+      #product-cont{
         width: 100%;
         display: flex;
         margin-top: $padding-xs * 2;
@@ -175,6 +187,10 @@
           background-color: $color-cuaternario;
 
         }
+        .selected{
+          background-color: #cccccc;
+        }
+
       }
       .sub-main-derecha{
         margin-top: $padding-l;

@@ -1,0 +1,41 @@
+//estileo carrito
+
+
+
+
+#carrito-main{
+  .carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   .cart-row{
+     display: flex;
+     gap: 30px;
+   }
+  }
+  .container{
+    margin: $padding-s;
+
+    *{
+      align-self: center;
+    }
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+
+    button{
+      padding: 2px;
+      outline: none;
+    }
+  }
+  #total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
