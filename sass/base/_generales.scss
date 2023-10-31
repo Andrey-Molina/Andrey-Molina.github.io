@@ -53,6 +53,17 @@ $color-quinario: #cccccc;
   }
 }
 
+@mixin annotation-lines-cont($top, $left){
+  position: absolute;
+  top: $top;
+  left: $left;
+  z-index: 1;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 
 //animations
 

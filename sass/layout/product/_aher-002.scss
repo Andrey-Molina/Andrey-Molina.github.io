@@ -1,21 +1,9 @@
 @import "sass/base/generales";
 
 
-@mixin annotation-lines-cont($top, $left){
-  position: absolute;
-  top: $top;
-  left: $left;
-  z-index: 1;
-  height: 200px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-
-#content-item02{
+#aher02-content-product{
 
   //local partial variables
-
 
   .aher-header-title{
     display: flex;
@@ -47,12 +35,12 @@
         left: 36px;
       }
       .annotation-line-cont01{
-        @include annotation-lines-cont(-1%, 54%);
-        width: 20%;
+        @include annotation-lines-cont(-1%, 53%);
+        width: 17%;
 
         p{
           align-self: center;
-          padding-top: 27px;
+          padding-top: 0;
         }
         .line01-cm{
           width: 200px;
@@ -76,7 +64,7 @@
 
       }
       .annotation-line-cont03{
-        @include annotation-lines-cont(25%, 30%,);
+        @include annotation-lines-cont(25%, 24%,);
         width: 60%;
 
         .line03-falda{
@@ -87,7 +75,7 @@
         }
       }
       .annotation-line-cont04{
-        @include annotation-lines-cont(66%, 19%,);
+        @include annotation-lines-cont(66%, 13%,);
         width: 60%;
 
         align-items: normal;
@@ -107,11 +95,11 @@
           padding-top: 27px;
         }
       }
-      .item02-image01{
+      .product-image01{
         height: auto;
         width: 40%;
       }
-      .item02-image01:hover{
+      .product-image01:hover{
         .line02-top{
           animation: extend-width 1s ease-out;
         }
@@ -121,7 +109,7 @@
         justify-content: center;
         .item-info{
           text-align: center;
-          margin: 7%;
+           margin: 7%;
         }
       }
     }
@@ -162,13 +150,13 @@
         transform: scale(1.01);
       }
 
-      #product-cont{
+      #size-cont{
         width: 100%;
         display: flex;
         margin-top: $padding-xs * 2;
         flex-wrap: wrap;
 
-        .product-var{
+        .size-var{
           font-size: larger;
           width: 45px;
           height: 45px;
@@ -183,7 +171,7 @@
           background-color: $color-terciario;
 
         }
-        .product-var:hover{
+        .size-var:hover{
           background-color: $color-cuaternario;
 
         }
@@ -206,7 +194,7 @@
             padding-right: 100px;
             left: 0;
           }
-          .item02-image02{
+          .product-image02{
             height: auto;
             width: 480px;
           }

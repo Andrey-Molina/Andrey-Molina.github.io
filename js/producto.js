@@ -1,7 +1,7 @@
 
 
 let currentSizeArr = ["size"];
-const allSizes = document.querySelectorAll(".product-var");
+const allSizes = document.querySelectorAll(".size-var");
 const add2cartBtn = document.getElementById("add-carrito");
 
 
@@ -22,10 +22,7 @@ allSizes.forEach(span => {
     });
 });
 
-
 // add the product
-
-
 
 add2cartBtn.addEventListener("click",
     add2cartBtn => {

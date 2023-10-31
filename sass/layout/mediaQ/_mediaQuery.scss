@@ -75,7 +75,7 @@
 
 //index
 
-@media  (max-width: 1024px) {
+@media  (max-width: 1050px) {
   #main-grid{
     .introduccion {
       p {
@@ -94,7 +94,7 @@
     }
   }
 }
-@media  (max-width: 768px){
+@media  (max-width: 810px){
   #main-grid{
     .introduccion {
       grid-column: 1/7;
@@ -111,7 +111,6 @@
       }
     }
     .imagenes{
-
       .imagen02{
         img {
           height: 88%;
@@ -138,8 +137,6 @@
       }
     }
   }
-
-
 }
 @media (max-width: 575px){
   #main-grid{
@@ -272,15 +269,16 @@
 }
 
 
-//item02
+
+//producto01
 
 @media  (min-width: 1412px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         .main-izquierda {
           justify-content: center;
-          .item02-image01 {
+          .product-image01 {
             margin: 10px;
             height: auto;
             width: 330px;
@@ -292,12 +290,12 @@
 }
 @media  (max-width: 1412px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         flex-direction: column;
         .main-izquierda {
           width: 100%;
-          .item02-image01 {
+          .product-image01 {
             margin: 20px 0 0 0 ;
             width: 300px;
           }
@@ -326,7 +324,7 @@
           flex-wrap: wrap;
           width: unset;
           justify-content: center;
-          #product-cont{
+          #size-cont{
             justify-content: center;
           }
 
@@ -337,7 +335,7 @@
 }
 @media  (max-width: 1250px){
   main{
-    #content-item02 {
+    #aher01-content-product {
       .cont-producto {
         .main-izquierda {
           .annotation-line-cont01{
@@ -362,7 +360,7 @@
 }
 @media  (max-width: 1024px){
   main{
-    #content-item02 {
+    #aher01-content-product {
       .cont-producto {
         .main-izquierda {
           .annotation-line-cont03{
@@ -381,7 +379,7 @@
 }
 @media  (max-width: 960px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         .main-izquierda {
           justify-content: center;
@@ -405,7 +403,7 @@
 }
 @media  (max-width: 768px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         .main-izquierda {
           .annotation-line-cont03{
@@ -426,7 +424,7 @@
 }
 @media  (max-width: 675px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         .main-derecha {
           .sub-main-derecha{
@@ -447,7 +445,7 @@
 }
 @media  (max-width: 575px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         .main-derecha{
           .section-01-info {
@@ -500,7 +498,7 @@
 }
 @media  (max-width: 485px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .main-izquierda {
         .annotation-line-cont02 {
           .line02-top {
@@ -542,7 +540,7 @@
 }
 @media  (max-width: 480px){
   main{
-    #content-item02{
+    #aher01-content-product{
       .cont-producto{
         .main-izquierda {
           justify-content: center;
@@ -584,13 +582,13 @@
         }
         .main-derecha{
           .product-var-cont{
-            .product-var{
+            .size-var{
               margin-right: 16px;
             }
           }
           .sub-main-derecha{
             .star-img-cont-flex{
-              .item02-image02{
+              .product-image02{
                 width: 100%;
               }
             }
@@ -601,7 +599,348 @@
   }
 }
 @media  (max-width: 320px){
-  #content-item02{
+  #aher01-content-product{
+    .cont-producto{
+      .star-img-cont-flex{
+        .star-deco-product{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+//producto02
+
+@media  (min-width: 1412px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        .main-izquierda {
+          justify-content: center;
+          .product-image01 {
+            margin: 10px;
+            height: auto;
+            width: 330px;
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 1412px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        flex-direction: column;
+        .main-izquierda {
+          width: 100%;
+          .product-image01 {
+            margin: 20px 0 0 0 ;
+            width: 300px;
+          }
+          .annotation-line-cont01{
+            top: 0;
+            left: 53%;
+            width: unset;
+            .line01-cm {
+              width: 110px;
+            }
+          }
+          .annotation-line-cont02{
+            left: -15%;
+          }
+          .annotation-line-cont03{
+            top: 23%;
+            left: 146px;
+          }
+          .annotation-line-cont04{
+            top: 61%;
+            left: 73px;
+          }
+        }
+        .main-derecha{
+          display: flex;
+          flex-wrap: wrap;
+          width: unset;
+          justify-content: center;
+          #size-cont{
+            justify-content: center;
+          }
+
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 1250px){
+  main{
+    #aher02-content-product {
+      .cont-producto {
+        .main-izquierda {
+          .annotation-line-cont01{
+            left: 53%;
+            .line01-cm {
+              width: 126px;
+            }
+          }
+          .annotation-line-cont03{
+            top: 24%;
+            left: 170px;
+
+          }
+          .annotation-line-cont04{
+            top: 62%;
+            left: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 1024px){
+  main{
+    #aher02-content-product {
+      .cont-producto {
+        .main-izquierda {
+          .annotation-line-cont03{
+            top: 24%;
+            left: 190px;
+
+          }
+          .annotation-line-cont04{
+            top: 61%;
+            left: 112px;
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 960px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        .main-izquierda {
+          justify-content: center;
+          .annotation-line-cont03{
+            top: 24%;
+            left: 190px;
+
+          }
+          .annotation-line-cont04{
+            top: 61%;
+            left: 112px;
+          }
+
+        }
+      }
+      .sub-footer-izquierda {
+        display: none;
+      }
+    }
+  }
+}
+@media  (max-width: 768px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        .main-izquierda {
+          .annotation-line-cont03{
+            top: 25%;
+            left: 210px;
+          }
+          .annotation-line-cont04{
+            top: 62%;
+            left: 132px;
+          }
+        }
+      }
+      .sub-footer-izquierda {
+        display: none;
+      }
+    }
+  }
+}
+@media  (max-width: 675px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        .main-derecha {
+          .sub-main-derecha{
+            .sub-main-cont-derecha{
+              overflow: auto;
+              white-space: nowrap;
+              #tabla-talles{
+                padding: 50px 0;
+                overflow: auto;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 575px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        .main-derecha{
+          .section-01-info {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            .product-info{
+              padding: 0;
+              margin: 15px 15px;
+            }
+            .inner-being-box-item-product{
+              padding: 0;
+              margin: 25px 0;
+            }
+          }
+          .sub-main-derecha{
+            overflow: auto;
+            white-space: nowrap;
+            .sub-main-cont-derecha {
+              overflow: auto;
+              white-space: nowrap;
+              section{
+                .sub-main-cont-derecha {
+                  overflow: auto;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+        .main-izquierda {
+          .annotation-line-cont03{
+            top: 25%;
+            left: 171px;
+            .line03-falda {
+              width: 101px;
+            }
+          }
+          .annotation-line-cont04{
+            top: 62%;
+            left: 152px;
+          }
+        }
+      }
+      .sub-footer-izquierda {
+        display: none;
+      }
+    }
+  }
+}
+@media  (max-width: 485px){
+  main{
+    #aher02-content-product{
+      .main-izquierda {
+        .annotation-line-cont02 {
+          .line02-top {
+            width: 74px;
+          }
+        }
+
+        .annotation-line-cont03{
+          top: 25%;
+          left: 156px;
+          .line03-falda {
+            width: 101px;
+          }
+        }
+        .annotation-line-cont04{
+          top: 62%;
+          left: 152px;
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 430px){
+  main{
+    .main-izquierda {
+      .annotation-line-cont03{
+        top: 25%;
+        left: 156px;
+        .line03-falda {
+          width: 101px;
+        }
+      }
+      .annotation-line-cont04{
+        top: 62%;
+        left: 152px;
+      }
+    }
+  }
+}
+@media  (max-width: 480px){
+  main{
+    #aher02-content-product{
+      .cont-producto{
+        .main-izquierda {
+          justify-content: center;
+          .annotation-line-cont01{
+            left: 53%;
+            top: -20px;
+            .line01-cm {
+              width: 59px;
+            }
+            p{
+              align-self: unset;
+              padding-bottom: 38px;
+            }
+          }
+          .annotation-line-cont02 {
+            left: -16%;
+            top: 117px;
+            .line02-top {
+              width: 49px;
+            }
+          }
+          .annotation-line-cont03{
+            top: 32%;
+            left: 126px;
+
+            .line03-falda{
+              width: 45px;
+              margin-bottom: 24px;
+            }
+          }
+          .annotation-line-cont04 {
+            top: 59%;
+            left: 124px;
+            .line04-polainas {
+              width: 35px;
+            }
+          }
+
+        }
+        .main-derecha{
+          .product-var-cont{
+            .size-var{
+              margin-right: 16px;
+            }
+          }
+          .sub-main-derecha{
+            .star-img-cont-flex{
+              .product-image02{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media  (max-width: 320px){
+  #aher02-content-product{
     .cont-producto{
       .star-img-cont-flex{
         .star-deco-product{
