@@ -1,0 +1,22 @@
+[
+  {
+    "id": "aher001",
+    "size": "",
+    "quantity": 1,
+    "price": {
+      "top": 25000,
+      "falda": 30000,
+      "polainas": 25000
+    }
+  },
+  {
+    "id": "aher002",
+    "size": "",
+    "quantity": 1,
+    "price": {
+      "top": 35000,
+      "falda": 20000,
+      "polainas": 15000
+    }
+  }
+]

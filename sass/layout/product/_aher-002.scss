@@ -144,13 +144,14 @@
         background-color: unset;
         margin:  20px 126px;
         font-style: italic;
+        min-width: max-content;
 
       }
       #add-carrito:hover{
         transform: scale(1.01);
       }
 
-      #size-cont{
+      #size-cont-02{
         width: 100%;
         display: flex;
         margin-top: $padding-xs * 2;

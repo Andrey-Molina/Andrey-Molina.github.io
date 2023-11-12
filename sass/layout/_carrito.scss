@@ -4,31 +4,45 @@
 
 
 #carrito-main{
-  .carrito{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   .cart-row{
-     display: flex;
-     gap: 30px;
-   }
+  .empty-cart{
+    text-align: center;
   }
-  .container{
-    margin: $padding-s;
-
+  #cart-components{
+    display: grid;
+    .carrito{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        .cart-row{
+          display: flex;
+          gap: 20%;
+        }
+    }
+  }
+  .product-container{
     *{
+      font-size: 18px;
       align-self: center;
     }
-    background-color: rgb(247, 247, 247);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 30px;
+    * div{
+      padding-right: 75px;
+    }
+
+    .item{
+      background-color: rgb(247, 247, 247);
+      padding: 25px;
+      margin: $padding-s * 2;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
 
     button{
-      padding: 2px;
+      margin-right: 175px;
+      padding: 10px;
       outline: none;
+      border: none;
     }
   }
   #total{
